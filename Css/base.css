@@ -1,0 +1,88 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v48-latin-regular.woff2") format("woff2");
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v48-latin-500.woff2") format("woff2");
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-v48-latin-700.woff2") format("woff2");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; /* mobile holatida bosilganda background ko'k bolib qolmaydi  */
+}
+:root {
+  --primary: #842c68;
+  --black: #000;
+  --white: #fff;
+  --gray-100: #535353;
+  --gray-200: #999999;
+  --star: #f3b541;
+  --bg-color: #000;
+}
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", "Areal", "sans-serif";
+  color: var(--black);
+  font-style: 18px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  font-size: inherit;
+}
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  display: flex;
+}
+ul,
+ol {
+  list-style-type: none;
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  display: flex;
+}
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAYNOOTH</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./Css/base.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/responsive.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- left navbar -->
+      <div class="sideBar__wrapper"></div>
+      <div class="side__bar">
+        <div class="side__logo">
+          <button type="button" class="close__btn" onclick="closeBtn()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <a href="#" style="display: flex; align-items: center">
+            <img src="./Images/sideBar_logo.png" alt="" />
+            <span style="font-size: 30px; color: #585757">MAYNOOTH</span>
+          </a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">LIVING ROOM</a>
+          </li>
+          <li>
+            <a href="#">BEDROOM</a>
+          </li>
+          <li>
+            <a href="#">KITCHEN & DINING</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-circle-user"></i>
+          <a href="https://gmail.com" style="font-size: 15px; color: #585757"
+            >qahhorovsherjahon0@gmail.com</a
+          >
+        </div>
+      </div>
+      <!-- left navbar end -->
+
+      <nav class="sitenav">
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="./Images/sitenav-logo.png" alt="" />
+          </a>
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">LIVING ROOM</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">BEDROOM</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">KITCHEN & DINING</a>
+            </li>
+            <li class="sitenav__item">
+              <a href="#" class="sitenav__link">CONTACT</a>
+            </li>
+          </ul>
+          <div class="icons">
+            <a href="#">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 16C4.9 16 4.01 16.9 4.01 18C4.01 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16ZM0 0V2H2L5.6 9.59L4.25 12.04C4.09 12.32 4 12.65 4 13C4 14.1 4.9 15 6 15H18V13H6.42C6.28 13 6.17 12.89 6.17 12.75L6.2 12.63L7.1 11H14.55C15.3 11 15.96 10.59 16.3 9.97L19.88 3.48C19.96 3.34 20 3.17 20 3C20 2.45 19.55 2 19 2H4.21L3.27 0H0ZM16 16C14.9 16 14.01 16.9 14.01 18C14.01 19.1 14.9 20 16 20C17.1 20 18 19.1 18 18C18 16.9 17.1 16 16 16Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <button type="button">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+            <button onclick="menuBtn()">
+              <svg
+                width="20"
+                height="13"
+                viewBox="0 0 20 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 3H0V1H5V3ZM5 6H0V8H5V6ZM18.59 13L14.76 9.17C13.96 9.69 13.02 10 12 10C9.24 10 7 7.76 7 5C7 2.24 9.24 0 12 0C14.76 0 17 2.24 17 5C17 6.02 16.69 6.96 16.17 7.75L20 11.59L18.59 13ZM15 5C15 3.35 13.65 2 12 2C10.35 2 9 3.35 9 5C9 6.65 10.35 8 12 8C13.65 8 15 6.65 15 5ZM0 13H10V11H0V13Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main -->
+    <main class="main">main</main>
+    <!-- main end -->
+    <!-- footer -->
+    <footer class="footer">footer</footer>
+    <!-- footer end-->
+
+    <!-- script -->
+    <script src="./index.js"></script>
+  </body>
+</html>

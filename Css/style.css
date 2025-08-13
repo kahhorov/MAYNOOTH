@@ -1,0 +1,99 @@
+.header {
+  background: var(--bg-color);
+  color: var(--white);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sitenav {
+  padding: 13px 0;
+}
+.sitenav__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+}
+.sitenav__link {
+  transition: 0.3s ease;
+}
+.icons {
+  display: flex;
+  gap: 60px;
+}
+.sitenav__link:hover {
+  color: var(--primary);
+}
+.icons a svg path,
+.icons button svg path {
+  transition: 0.3s ease;
+}
+.icons a:hover svg path {
+  fill: var(--primary);
+}
+.icons button:hover svg path {
+  fill: var(--primary);
+}
+
+.main {
+  flex-grow: 1;
+  border: 1px solid red;
+}
+.close__btn {
+  position: absolute;
+  right: 8%;
+}
+.side__logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+}
+.sideBar__wrapper {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.458);
+  transform: translateX(-100%);
+}
+.side__bar {
+  width: 400px;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 50px 0;
+  background: white;
+  color: #000;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
+.side__bar ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.side__bar ul li {
+  padding: 20px 30px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  transition: all 0.4s ease;
+  font-weight: bold;
+  color: #4e4e4e;
+}
+
+.side__bar ul li:hover {
+  color: var(--primary);
+}
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 5%;
+  left: 30px;
+  font-size: 25px;
+  color: #2c2c2c;
+}
