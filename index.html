@@ -31,6 +31,13 @@
           </a>
         </div>
         <ul>
+          <li
+            onclick="filter()"
+            style="display: flex; align-items: center; gap: 20px"
+          >
+            <span>Filter</span>
+            <i class="fa-solid fa-filter"></i>
+          </li>
           <li>
             <a href="#">LIVING ROOM</a>
           </li>
@@ -122,13 +129,21 @@
     <!-- header end -->
     <!-- main -->
     <main class="main">
-      <div class="container">
+      <div class="filter_box"></div>
+      <div class="container__filter">
         <div class="filter">
           <span class="filter__inner_router"
             >HOME > LIVING ROOM >
             <span class="filter__inner_dom">Sofas</span></span
           >
           <form class="filter__inner">
+            <button
+              type="button"
+              class="filter__close_btn"
+              onclick="filterClose()"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
             <h3 class="filter__inner_title">Filter By</h3>
             <hr class="filter__line" />
             <h3 class="filter__inner_title">Price</h3>
@@ -1677,10 +1692,13 @@
     <footer class="footer">
       <div class="container">
         <ul class="footer-list">
+          <li type="none">
+            <img src="./images/sitenav-logo.png" alt="" class="liImg" />
+          </li>
           <li>Living Room</li>
           <li>Bedroom</li>
           <li>Kitchen & Dining</li>
-          <li><img src="./images/sitenav-logo.png" alt="" /></li>
+          <li class="img"><img src="./images/sitenav-logo.png" alt="" /></li>
           <li>About</li>
           <li>Blog</li>
           <li>Support</li>

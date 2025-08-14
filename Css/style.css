@@ -39,7 +39,7 @@
 .main {
   flex-grow: 1;
 }
-.main .container {
+.main .container__filter {
   display: flex;
   justify-content: space-between;
 }
@@ -103,6 +103,12 @@
 .filter {
   padding: 33px 0;
   width: 310px;
+}
+.container__filter {
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 .filter__inner {
   position: sticky;
@@ -200,7 +206,12 @@
   border-top: 2px solid var(--gray-400);
   margin-top: 19px;
 }
-
+.filter_mobile {
+  display: none;
+}
+.filter__close_btn {
+  display: none;
+}
 .footer {
   background: #000;
   color: #fff;
@@ -242,4 +253,22 @@
   font-size: 14px;
   gap: 15px;
   padding-bottom: 35px;
+}
+
+.liImg {
+  display: none;
+}
+
+.filter__close_btn {
+  display: none;
+}
+
+.filter_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000058;
+  width: 100%;
+  height: 100vh;
+  display: none;
 }
