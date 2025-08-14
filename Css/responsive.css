@@ -17,10 +17,29 @@
     display: none;
   }
 }
+@media screen and (max-width: 769px) {
+  .filter {
+    display: none;
+  }
+  .products__row {
+    grid-template-columns: repeat(2, auto);
+  }
+  .footer {
+    display: none;
+  }
+}
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 426px) {
   .logo img {
     width: 140px;
+  }
+  .products__row {
+    grid-template-columns: repeat(1, auto);
+    padding-bottom: 20px;
+  }
+  .choose {
+    padding: 5px 20px;
+    font-size: 12px;
   }
 }
 
@@ -43,5 +62,13 @@
   }
   .side__bar {
     width: 100%;
+  }
+  .choose {
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
   }
 }
