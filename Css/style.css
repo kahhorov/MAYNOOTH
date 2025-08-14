@@ -172,7 +172,10 @@
   grid-template-columns: repeat(3, auto);
   gap: 40px 20px;
 }
-
+.products__card img {
+  width: 100%;
+  height: 200px;
+}
 .products__card .card__title {
   display: flex;
   align-items: center;
